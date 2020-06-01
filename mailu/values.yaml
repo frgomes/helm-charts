@@ -110,10 +110,12 @@ front:
   resources:
     requests: 
       memory: 100Mi
-      cpu: 100m
-    limits:
-      memory: 200Mi
-      cpu: 200m
+      cpu: 60m
+    #  memory: 100Mi
+    #  cpu: 100m
+    #limits:
+    #  memory: 200Mi
+    #  cpu: 200m
 
 admin:
   # logLevel: WARNING
@@ -123,11 +125,13 @@ admin:
     # tag: master
   resources:
     requests:
-      memory: 500Mi
-      cpu: 500m
-    limits:
-      memory: 500Mi
-      cpu: 500m
+      memory: 220Mi
+      cpu: 60m
+    #  memory: 500Mi
+    #  cpu: 500m
+    #limits:
+    #  memory: 500Mi
+    #  cpu: 500m
 
 redis:
   image:
@@ -136,10 +140,12 @@ redis:
   resources:
     requests:
       memory: 200Mi
-      cpu: 100m
-    limits:
-      memory: 300Mi
-      cpu: 200m
+      cpu: 60m
+    #  memory: 200Mi
+    #  cpu: 100m
+    #limits:
+    #  memory: 300Mi
+    #  cpu: 200m
 
 postfix:
   # logLevel: WARNING
@@ -149,11 +155,13 @@ postfix:
     # tag: master
   resources:
     requests:
-      memory: 2Gi
-      cpu: 500m
-    limits:
-      memory: 2Gi
-      cpu: 500m
+      memory: 50Mi
+      cpu: 60m
+    #  memory: 2Gi
+    #  cpu: 500m
+    #limits:
+    #  memory: 2Gi
+    #  cpu: 500m
 
 dovecot:
   # logLevel: WARNING
@@ -163,11 +171,13 @@ dovecot:
     # tag: master
   resources:
     requests:
-      memory: 500Mi
-      cpu: 500m
-    limits:
-      memory: 500Mi
-      cpu: 500m
+      memory: 70Mi
+      cpu: 60m
+    #  memory: 500Mi
+    #  cpu: 500m
+    #limits:
+    #  memory: 500Mi
+    #  cpu: 500m
 
 rspamd:
   # logLevel: WARNING
@@ -177,11 +187,13 @@ rspamd:
     # tag: master
   resources:
     requests:
-      memory: 100Mi
-      cpu: 100m
-    limits:
-      memory: 200Mi
-      cpu: 200m
+      memory: 120Mi
+      cpu: 60m
+    #  memory: 100Mi
+    #  cpu: 100m
+    #limits:
+    #  memory: 200Mi
+    #  cpu: 200m
 
 clamav:
   enabled: true
@@ -192,11 +204,13 @@ clamav:
     # tag: master
   resources:
     requests:
-      memory: 1Gi
-      cpu: 1000m
-    limits:
-      memory: 2Gi
-      cpu: 1000m
+      memory: 1000Mi
+      cpu: 100m
+    #  memory: 1Gi
+    #  cpu: 1000m
+    #limits:
+    #  memory: 2Gi
+    #  cpu: 1000m
 
 roundcube:
   enabled: true
@@ -208,10 +222,12 @@ roundcube:
   resources:
     requests:
       memory: 100Mi
-      cpu: 100m
-    limits:
-      memory: 200Mi
-      cpu: 200m
+      cpu: 60m
+    #  memory: 100Mi
+    #  cpu: 100m
+    #limits:
+    #  memory: 200Mi
+    #  cpu: 200m
 
 
 webdav:
